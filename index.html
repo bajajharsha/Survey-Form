@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey On Online Education</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Padauk:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="title">SURVEY ON ONLINE LEARNING</h1>
+        <p id="description">This survey to explore opinions on online and distance teaching</p>
+    </header>
+    <main>
+        <div class="form">
+
+            <form id="survey-form">
+                <!-- Name -->
+                <label id="name-label" for="name">Name:</label><br>
+                <input 
+                       type="text"
+                       name="name" 
+                       id="name"
+                       placeholder="Ex.John"
+                       required>
+                <br><br>
+                <!-- email -->
+                <label id="email-label" for="email">Email: </label><br>
+                <input type="email" name="email" id="email" placeholder="Ex. xyz@email.com" required
+                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <br><br>
+                <!--  number -->
+                <label id="number-label" for="number">Age:</label><br>
+                <input type="number" name="number" id="number" placeholder="Ex. Enter your Age" required min="10" max="99">
+                <br><br>
+                <!-- question 1   dropdown -->
+                <label for="q1">What device do you use for distance learning?</label><br>
+                <select name="q1" id="dropdown" required>
+                    <option disabled selected value value="select">Select</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="desktop">Desktop</option>
+                    <option value="tablet">Tablet</option>
+                    <option value="smartphone">Smartphone</option>
+                </select>
+                <br><br>
+                <!-- question 2  radio-->
+                <label for="q2">How much time do you spend each day on an average on distance education?</label><br>
+                <input type="radio" id="radio-btn" name="option" value="radio-btn" required>
+                <label for="radio-btn">1-3 hours</label><br>
+                <input type="radio" id="radio-btn" name="option" value="radio-btn">
+                <label for="radio-btn">3-5 hours</label><br>
+                <input type="radio" id="radio-btn" name="option" value="radio-btn">
+                <label for="radio-btn">5-7 hours</label><br>
+                <input type="radio" id="radio-btn" name="option" value="radio-btn">
+                <label for="radio-btn">7-10 hours</label><br>
+                <input type="radio" id="radio-btn" name="option" value="radio-btn">
+                <label for="radio-btn">10+ hours</label><br>
+                <br>
+                <!-- question 3 -->
+                <label for="q3">Which platform do you use?  </label><br>
+                <input type="checkbox" id="platform" name="meet" value="google meet" required>
+                <label for="platform"> Google Meet</label><br>
+                <input type="checkbox" id="platform" name="meet" value="MS Teams">
+                <label for="platform"> MS Teams</label><br>
+                <input type="checkbox" id="platform" name="meet" value="Zoom Classes">
+                <label for="platform">Zoom Classes</label><br>
+                <br>
+                <!-- comments  textarea -->
+                <label for="comments">Any comments or suggestions?</label><br><br>
+                <textarea name="" id="" cols="60" rows="10">Enter your comment here...</textarea><br>
+
+                
+                <button id="submit" type="submit" form="form" value="Submit">Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

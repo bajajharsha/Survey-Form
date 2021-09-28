@@ -1,0 +1,43 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://img.etimg.com/thumb/msid-77937584,width-1200,height-900,imgsize-148807,resizemode-8,quality-100/industry/services/education/view-heres-why-india-needs-to-be-future-ready-in-online-education.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#title{
+    font-family: 'Lora', serif;
+font-size: 50px;
+text-align: center;
+color: white;
+text-decoration: underline;
+}
+#description{
+    text-align: center;
+color: white;
+font-family: 'Cantarell', sans-serif;}
+header{
+    background: rgb(100, 110, 255);
+}
+.form{
+    background: rgba(197, 222, 233, 0.6);
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    padding: 100px;
+    border-radius: 6px;
+}
+#survey-form{
+    font-size: 21px;
+    font-family: 'Padauk', sans-serif;
+}
+input, select{
+    height: 30px;
+}
+#name, #email, #number{
+    width: 500px;
+padding: 5px;}
